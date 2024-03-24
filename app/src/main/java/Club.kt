@@ -1,6 +1,4 @@
 package id.ac.pnm.ti2a.utspm1
-
-// data class Club
 data class Club(
     val name: String,
     val premierLeague: Int,
@@ -11,8 +9,6 @@ data class Club(
     val european: Int,
 
 )
-
-// extension function recap
 fun Club.recap(): String {
     return "${name} berhasil meraih $premierLeague trofi Liga Primer Inggris, " +
             "$faCup trofi FA, $eflCup trofi EFL, $ligaChampions trofi Liga Champions, " +
@@ -20,7 +16,6 @@ fun Club.recap(): String {
 }
 
 fun main() {
-    // Inisialisasi mutableList dan tambah data List
     val clubs = mutableListOf<Club>(
         Club("Liverpool", 19, 8, 9, 6, 3, 0),
         Club("Manchester United", 20, 12, 6, 3, 1, 0),
@@ -29,7 +24,6 @@ fun main() {
         Club("Arsenal", 13, 14, 2, 0, 0, 0)
     )
 
-    // Panggil extension function Club recap
     println("Rekap perolehan trofi klub:")
     for (club in clubs) {
         println(club.recap())
