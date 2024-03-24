@@ -84,6 +84,6 @@ fun Club.totalTrophy(): Int {
     get() = this.ligaEropa
 
     val Club.recap: String
-    get() = "Liverpool berhasil meraih ${this.premier} trofi Liga Primer Inggris, " +
+    get() = "${this.name} berhasil meraih ${this.premier} trofi Liga Primer Inggris, " +
             "${this.fa} trofi FA, ${this.efl} trofi EFL, " +
             "${this.ucl} trofi Liga Champions, dan ${this.uel} trofi Liga Eropa UEFA"
