@@ -10,7 +10,7 @@ data class Club(
 
 )
 fun Club.recap(): String {
-    return "${name} berhasil meraih $premierLeague trofi Liga Primer Inggris, " +
+    return "$name berhasil meraih $premierLeague trofi Liga Primer Inggris, " +
             "$faCup trofi FA, $eflCup trofi EFL, $ligaChampions trofi Liga Champions, " +
             "$ligaEropa trofi Liga Eropa UEFA dan $european trofi EURO"
 }
