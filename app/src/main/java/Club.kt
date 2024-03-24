@@ -10,11 +10,7 @@ data class Club(
     val ligaEropa: Int,
     val european: Int,
 
-) {
-    val uclLose: Boolean = false
-    val uelLose: Boolean = false
-}
-
+)
 
 // extension function recap
 fun Club.recap(): String {
